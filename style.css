@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: linear-gradient(200deg, #FFD1E3, #7EA1FF);
+
+    box-sizing: border-box;
+
+}
+
+
+
+.presentacionContenidoTitulo {
+    font-size: 24px; /* Tamaño de fuente ajustado */
+    color: #495057; /* Color del texto */
+    font-weight: 400; /* Regular */
+    font-family: "Inter", sans-serif; /* Fuente Inter */
+    display: flex;
+    justify-content: center; /* Alineación horizontal (centro) */
+    align-items: center; /* Alineación vertical (centro) */
+    position: absolute;
+    top: 168px; /* Coordenada y */
+    left: 240px; /* Coordenada x ajustada */
+    width: 577px; /* Ancho ajustado */
+    height: 400px; /* Altura ajustada */
+    
+    border: none; /* Sin borde */
+    background-color: transparent; /* Sin color de fondo */
+    resize: none; /* Evita el redimensionamiento */
+    
+    /* Estilo para permitir el desplazamiento si el contenido excede */
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+    box-sizing: border-box; /* Incluye el padding en el ancho y alto */
+    padding: 16px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto a la izquierda */
+    line-height: 1.4; /* Ajusta la altura de línea para mejor legibilidad */
+    outline: none; /* Elimina el borde de enfoque */
+}
+
+
+
+
+
+.presentacionlogo{
+    position: absolute;
+    top: 45px; /* Coordenada y */
+    left: 50px; /* Coordenada x */
+    width: 50px; /* Ancho */
+    height: 50px; /* Altura */
+
+}
+
+.rectangulo {
+    position: relative; /* Para posicionar elementos dentro del rectángulo */
+    top: 40px; /* Coordenada y */
+    left: 1000px; /* Coordenada x */
+    width: 400px; /* Ancho */
+    height: 944px; /* Altura */
+    background-color: #FFFFFF; /* Color de fondo blanco */
+    border-radius: 32px; /* Esquinas redondeadas */
+    border: 1px solid #ddd; /* Opcional: borde gris claro para visibilidad */
+    padding: 20px; /* Espacio interno */
+    box-sizing: border-box;
+}
+
+
+/* CSS para ocultar la imagen y el texto alternativo */
+#presentacionmuneco {
+    display: block; /* Por defecto, la imagen está visible */
+}
+
+#presentacionmuneco.hidden {
+    display: none; /* Oculta la imagen cuando tiene la clase 'hidden' */
+}
+
+#presentacionmuneco-text {
+    display: none; /* Oculta el texto por defecto */
+    font-size: 24px;
+    color: #0A3871;
+    text-align: center;
+    line-height: 67px; /* Alineación vertical del texto */
+}
+
+.textorectangulo.hidden {
+    display: none; /* Oculta el texto cuando tiene la clase 'hidden' */
+}
+
+
+
+
+
+.presentacionmuneco{
+    position: absolute;
+    top: 283px; /* Coordenada y */
+    left: 20px; /* Coordenada x */
+    width: 336px; /* Ancho */
+    height: 304px; /* Altura */
+}
+
+.textorectangulo {
+    position: absolute;
+    top: 10px; /* Ajustado según el nuevo requerimiento */
+    left: 40px; /* Ajustado según el nuevo requerimiento */
+    width: 336px; /* Ancho fijo */
+    height: 781px; /* Altura fija */
+    overflow: auto; /* Permite el scroll si el texto excede la altura */
+    font-family: "Inter", sans-serif; /* Fuente Inter */
+    font-size: 24px; /* Tamaño de fuente */
+    color: #495057; /* Color del texto */
+    font-weight: 400; /* Regular */
+    line-height: 1.4; /* Espaciado entre líneas */
+    text-align: left; /* Alineación del texto */
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido en el centro */
+    justify-content: center; /* Alinea horizontalmente el contenido en el centro */
+}
+
+
+
+.primertexto{
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #343A40;
+    position:absolute;
+    left: 20px; /* Ajusta la posición horizontal dentro del rectángulo */
+    top: 20px; /* Ajusta la posición vertical dentro del rectángulo */
+    width: calc(100% - 40px);
+    text-align: center;
+
+    
+}
+
+.segundotexto{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #495057;
+    position:absolute;
+    left: 20px; /* Ajusta la posición horizontal dentro del rectángulo */
+    top: calc(20px + 24px + 50px); /* Ajusta la posición vertical para estar 16px debajo del primer texto */
+    width: calc(100% - 40px); /* Ajusta el ancho teniendo en cuenta el padding */
+    text-align: center;
+
+}
+
+.icono-container {
+    display: flex;
+}
+
+.presentacionicono{
+    position:absolute;
+    top: 851px; /* Coordenada y */
+    left: 240px; /* Coordenada x */
+    margin-right: 8px;
+}
+
+.textoicono{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #45565F;
+    position:absolute;
+    top: 851px; /* Coordenada y */
+    left: calc(240px + 20px + 8px); /* Coordenada x */
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.botones-container {
+    position: absolute;
+    top: 885px; /* Coordenada y */
+    left: 240px; /* Coordenada x */
+    width: 680px; /* Ancho total del contenedor */
+    display: flex; /* Usa flexbox para alinear los botones */
+    justify-content: space-between; /* Distribuye el espacio entre los botones */
+    gap: 24px; /* Espacio horizontal entre los botones */
+    align-items: center;
+}
+
+
+
+
+.botonEncriptar{
+    width: 328px; /* Ancho del botón */
+    height: 67px; /* Altura del botón */
+    background-color: #0A3871; /* Color de fondo del botón */
+    color: #D8DFE8; /* Color del texto */
+    font-family: "Inter", sans-serif; /* Fuente */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Sin borde predeterminado */
+    border-radius: 12px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    line-height: 67px; /* Centra verticalmente el texto */
+    display: flex; /* Usa flexbox para alinear el texto en el centro */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    cursor: pointer;
+
+
+}
+
+.botonDesencriptar{
+    width: 328px; /* Ancho del botón */
+    height: 67px; /* Altura del botón */
+    background-color: #D8DFE8; /* Color de fondo del botón */
+    color: #0A3871; /* Color del texto */
+    font-family: "Inter", sans-serif; /* Fuente */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Sin borde predeterminado */
+    border-radius: 12px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    line-height: 67px; /* Centra verticalmente el texto */
+    display: flex; /* Usa flexbox para alinear el texto en el centro */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    cursor: pointer;
+}
+
+
+.boton-copiar {
+    display: none; /* Oculto por defecto */
+    width: 336px;
+    height: 67px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+    border-radius: 12px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 843px; /* Coordenada y para alinear verticalmente */
+    left: 40px; /* Coordenada x para alinear horizontalmente */
+}
+
+
+.footer{
+    background-color: none ;
+    padding: 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 16px;
+
+}
+
+
+/* Estilos generales (Desktop) */
+@media (min-width: 1024px) {
+    .rectangulo {
+        width: 400px; /* Ancho fijo para grandes pantallas */
+    }
+}
+
+
+/* Estilos para Tablets (pantallas de entre 768px y 1024px de ancho) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .rectangulo {
+        width: 80%; /* Ajusta el ancho para pantallas medianas */
+        max-width: 600px; /* Ancho máximo */
+    }
+}
+
+/* Estilos para Celulares (pantallas de menos de 768px de ancho) */
+@media (max-width: 768px) {
+    .rectangulo {
+        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+        max-width: none; /* Elimina el ancho máximo */
+    }
+
+    .botonEncriptar, .botonDesencriptar, .boton-copiar {
+        width: 100%; /* Botones ocupan todo el ancho disponible */
+        height: 50px; /* Altura ajustada */
+    }
+}
+
+
+
+
+    

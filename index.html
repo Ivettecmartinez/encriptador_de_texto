@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header para el logo y el icono -->
+    <header>
+        <img class="presentacionlogo" src="Vector.png" alt="Logo de alura">
+        <div class="icono-container">
+            <img class="presentacionicono" src="Group.png" alt="Icono de ayuda">
+            <p class="textoicono">Solo letras minúsculas y sin acentos</p>
+        </div>
+    </header>
+
+    <!-- Contenedor principal con el rectángulo y el contenido -->
+    <main>
+        <div class="rectangulo">
+            <div id="textorectangulo" class="textorectangulo">
+                <p class="primertexto">Ningún mensaje fue encontrado</p>
+                <p class="segundotexto">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <img id="presentacionmuneco" class="presentacionmuneco" src="Muñeco.png" alt="Muñeco de alura">
+
+            <!-- Botón Copiar -->
+            <button id="botonCopiar" class="boton-copiar">Copiar</button>
+        </div>
+
+        <!-- Contenedor para los botones -->
+        <div class="botones-container">
+            <button id="botonEncriptar" class="botonEncriptar">Encriptar</button>
+            <button id="botonDesencriptar" class="botonDesencriptar">Desencriptar</button>
+        </div>
+        
+        <section>
+            <textarea id="presentacionContenidoTitulo" class="presentacionContenidoTitulo">Ingrese el texto aquí</textarea>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Ivette Martinez</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
